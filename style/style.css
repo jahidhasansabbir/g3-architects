@@ -3,10 +3,14 @@
   margin: 0;
   padding: 0;
 }
+main, footer{
+    margin: 0 auto;
+    max-width: 1440px;
+}
 .flex {
   display: flex;
 }
-.pri {
+.primary-color {
   color: #ff900e;
 }
 .dark-1 {
@@ -29,10 +33,27 @@
 .description{
     font-size: 1rem;
     margin: 24px 0;
+    max-width: 876px;
 }
 .center{
+    margin: 0 auto;
     text-align: center;
 }
+
+/* margin */
+.mt{
+    margin-top: 24px;
+}
+.mb{
+    margin-bottom: 24px;
+}
+.ml{
+    margin-left: 24px;
+}
+.mr{
+    margin-right: 24px;
+}
+
 /* header section related styles */
 header {
   background: rgba(255, 144, 14, 0.1);
@@ -61,7 +82,8 @@ nav {
   font-size: 1.1rem;
 }
 .banner{
-    margin: 40px 0;
+    margin: 40px auto;
+    max-width: 1440px;
 }
 .banner-title{
     font-size: 4rem;
@@ -71,6 +93,33 @@ nav {
     width: 100%;
     margin: 45px 0;
 }
+
+/* Quick list section related styles */
+.quick-list{
+    margin: 0 2%;
+    align-items: center;
+    justify-content: space-between;
+}
+.quick-list-content{
+    max-width: 468px;
+}
+.quick-list-content h3{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 24px 0;
+}
+#quick-list{
+    font-weight: 500;
+}
+.img-container img{
+    width: 100%;
+}
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
 /* Responsive for small screens */
 @media screen and (max-width: 576px) {
     html{
@@ -78,5 +127,15 @@ nav {
     }
     .navbar ul {
     display: none;
+  }
+  .quick-list{
+    flex-direction: column-reverse;
+  }
+  .img-container{
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .ml{
+    margin-left: 0;
   }
 }
