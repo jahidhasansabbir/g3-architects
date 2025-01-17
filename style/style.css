@@ -78,6 +78,9 @@ main, footer{
 .semibold{
   font-weight: 600;
 }
+.margin{
+  margin: 80px 2%;
+}
 
 /* header section related styles */
 header {
@@ -176,6 +179,20 @@ nav {
   top: -70px;
   left: -50px;
 }
+/* Some facts related styles */
+.fact-card-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact-card{
+  /* width: 100%; */
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  padding: 38px;
+}
+.fact-description{
+  max-width: 542px;
+}
 /* Responsive for small screens */
 @media screen and (max-width: 576px) {
     html{
@@ -201,5 +218,12 @@ nav {
     position: relative;
     top: 20px;
     left: 0;
+  }
+  .fact-card{
+    width: 60%;
+  }
+  .fact-card-container{
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 }
