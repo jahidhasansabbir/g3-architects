@@ -193,6 +193,18 @@ nav {
 .fact-description{
   max-width: 542px;
 }
+
+/* Sponsor related styles */
+.sponsor-img-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.sponsor-img-container img{
+  filter:grayscale(100%);
+}
+
 /* Responsive for small screens */
 @media screen and (max-width: 576px) {
     html{
@@ -222,8 +234,11 @@ nav {
   .fact-card{
     width: 60%;
   }
-  .fact-card-container{
+  .fact-card-container, .sponsor-img-container{
     grid-template-columns: 1fr;
     gap: 12px;
+  }
+  .sponsor-img-container{
+    gap: 32px;
   }
 }
