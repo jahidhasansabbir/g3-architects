@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  font-family: "Work Sans", serif;
+}
 main, footer{
     margin: 0 auto;
     max-width: 1440px;
@@ -121,7 +124,9 @@ nav {
     width: 100%;
     margin: 45px 0;
 }
-
+.hide{
+  display: none;
+}
 /* Quick list section related styles */
 .quick-list{
     margin: 0 2%;
@@ -258,6 +263,9 @@ footer{
     }
     .navbar ul {
     display: none;
+  }
+  .hide{
+    display: block;
   }
   .quick-list{
     flex-direction: column-reverse;
